@@ -1,0 +1,100 @@
+body {
+    margin: 0px;
+}
+.main-container {
+    width: 100%;
+    max-width: 1800px;
+    margin: 0px auto;
+    font-size: 1em;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #E9E8EB;
+}
+
+main .first {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #E9E8EB;
+    border-radius: 0px 0px 115px 115px;
+}
+
+
+main section .season {
+    display: flex;
+    flex-direction: column;
+}
+
+main section .register {
+    display: flex;
+    flex-direction: row;
+}
+
+main .second {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+main .second .card {
+    display: flex;
+    flex-direction: column;
+    margin: 40px;
+    justify-content: center;
+    align-items: center;
+}
+
+main .third div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+main .third .card {
+    display: flex;
+    flex-direction: column;
+    margin: 60px;
+    justify-content: center;
+    align-items: center;
+}
+
+main .Fourth {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background-color: #E9E8EB;
+}
+
+main .Fourth .card {
+    display: flex;
+    flex-direction: column;
+    margin: 60px;
+    justify-content: center;
+    align-items: center;
+    background-color: #FFFF;
+    padding: 10PX;
+    border-radius: 15PX;
+}
+
+main .Fourth div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+main .Fourth div P {
+    background-color: #E9E8EB;
+}
+
+main .Fourth P {
+    background-color: #FFFF;
+}
+
