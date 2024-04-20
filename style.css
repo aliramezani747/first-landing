@@ -31,6 +31,7 @@ main .first {
     align-items: center;
     background-color: #E9E8EB;
     border-radius: 0px 0px 115px 115px;
+    margin-top: -40px;
 }
 
 main .first h1 {
@@ -51,13 +52,14 @@ main .first .season {
 main .first .register {
     display: flex;
     flex-direction: row;
-    font-size: 40px;
-    color: #50836a;
+    font-size: 38px;
+    font-weight: bold;
+    color: #286444;
 }
 
 main .first .button1 {
-    font-size: 30px;
-    padding: 10px 10px;
+    font-size: 20px;
+    padding: 5px 20px;
     border-radius: 10px;
     background-color: #bb1613;
     color: #ffffff;
@@ -65,10 +67,10 @@ main .first .button1 {
 }
 
 main .first .button2 {
-    font-size: 30px;
-    padding: 10px 40px;
+    font-size: 20px;
+    padding: 5px 55px;
     border-radius: 10px;
-    background-color: #50836a;
+    background-color: #286444;
     color: #ffffff;
     font-family: 'MyCustomFont';
 }
@@ -84,14 +86,13 @@ main .second {
 main .second .card {
     display: flex;
     flex-direction: column;
-    margin: 35px;
+    margin: 20px 40px;
     justify-content: center;
     align-items: center;
-    margin-right: 80px;
 }
 
 main .second  p {
-    font-size: 20px;
+    font-size: 30px;
     color: #bb1613;
     font-weight: bold;
 }
@@ -101,7 +102,7 @@ main .third div {
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    margin: 0px 200px;
+    margin: 0px 200px 50px 200px;
     padding: 0px;
 }
 
@@ -111,16 +112,19 @@ main .third .card {
     justify-content: center;
     align-items: center;
     margin: 0px;
+    padding: 0px 60px;
 }
 
 main .third .middle-card {
-    margin: 0px;
+    margin: 0px 0px 10px 110px;
 }
 
 main .third  p {
-    font-size: 25px;
-    color: #50836a;
-    padding: 0px 90px;
+    font-size: 20px;
+    color: #286444;
+    margin: 0px;
+    border: 2px solid #0000;
+    text-align: justify;
 }
 
 main .Fourth {
@@ -135,7 +139,7 @@ main .Fourth {
 main .Fourth .card {
     display: flex;
     flex-direction: column;
-    margin: 30px;
+    margin: 10px;
     justify-content: center;
     align-items: center;
     background-color: #FFFF;
