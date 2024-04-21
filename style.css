@@ -11,9 +11,9 @@ body {
 
 .main-container {
     width: 100%;
-    max-width: 1800px;
+    max-width: 1900px;
     margin: 0px auto;
-    font-size: 1em;
+    font-size: 16px;
     font-family: 'MyCustomFont';
 }
 
@@ -27,11 +27,9 @@ header{
 
 main .first {
     display: flex;
-    justify-content: center;
-    align-items: center;
+    flex-wrap: wrap;
     background-color: #E9E8EB;
     border-radius: 0px 0px 115px 115px;
-    margin-top: -40px;
 }
 
 main .first h1 {
@@ -42,11 +40,12 @@ main .first h1 {
 
 
 main .first .season {
+    width: 50%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0px;
+    padding: 10px;
 }
 
 main .first .register {
@@ -78,13 +77,14 @@ main .first .button2 {
 
 main .second {
     display: flex;
-    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 
 main .second .card {
     display: flex;
+    width: 25%;
     flex-direction: column;
     margin: 20px 40px;
     justify-content: center;
@@ -98,12 +98,11 @@ main .second  p {
 }
 
 main .third div {
-    display: flex;
-    flex-direction: row;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
     justify-content: center;
     align-items: center;
-    margin: 0px 200px 50px 200px;
-    padding: 0px;
+    margin: auto;
 }
 
 main .third .card {
@@ -113,10 +112,6 @@ main .third .card {
     align-items: center;
     margin: 0px;
     padding: 0px 60px;
-}
-
-main .third .middle-card {
-    margin: 0px 0px 10px 110px;
 }
 
 main .third  p {
@@ -131,26 +126,28 @@ main .Fourth {
     display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     background-color: #E9E8EB;
     padding-top: 30px;
 }
 
-main .Fourth .card {
+main .Fourth .cards {
+    width: 25%; /* 4 cards in one row */
+    box-sizing: border-box;
     display: flex;
     flex-direction: column;
-    margin: 10px;
     justify-content: center;
-    align-items: center;
+    align-items: stretch;
     background-color: #FFFF;
     padding: 10PX;
     border-radius: 15PX;
 }
 
 main .Fourth div {
+    padding: 0 5%;
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-wrap: wrap;
+    justify-content: space-around;
     align-items: center;
 }
 
@@ -164,6 +161,8 @@ main .Fourth button {
 
 main .Fourth div p {
     background-color: #E9E8EB;
+    justify-content: center;
+    align-items: center;
 }
 
 main .Fourth P {
@@ -183,7 +182,7 @@ main .fifth {
     max-width: 991px;
     min-width: 320px;
     margin: auto;
-    padding: 0 50px;
+    padding: 0 50;
 }
 .accordion h1 {
     font-size: 32px;
@@ -267,8 +266,46 @@ footer {
 footer p {
     background-color: #bb1613;
     color: #ffffff;
-    font-size: 25px;
+    font-size: 20px;
     padding: 10px 80px;
     border-radius: 0px 0px 30px 30px;
 }
 
+/* media query */
+@media screen and (max-width:900px){
+    main {
+        
+    }
+    main .fourth div .cards {
+        
+    }
+
+}
+
+@media screen and (max-width:600px){
+    main .menu {
+        display: none;
+    }
+
+    main {
+        
+    }
+
+    main .first .season {
+        width: 50%;
+    }
+
+    main .Fourth .cards {
+        width: 50%;
+    }
+
+    header {
+        flex-direction: row;
+        margin-top: 10px;
+        text-align: center;
+    }
+
+    .main-container {
+        font-size: 1.3em;
+    }
+}
