@@ -1,6 +1,7 @@
 body {
     margin: 0px;
     direction: rtl;
+    font-size: 16px;
 }
 
 @font-face {
@@ -32,13 +33,6 @@ main .first {
     border-radius: 0px 0px 115px 115px;
 }
 
-main .first h1 {
-    font-size: 160px;
-    color: #50836a;
-    margin: 0px;
-}
-
-
 main .first .season {
     width: 50%;
     display: flex;
@@ -51,13 +45,13 @@ main .first .season {
 main .first .register {
     display: flex;
     flex-direction: row;
-    font-size: 38px;
+    font-size: 2.2em;
     font-weight: bold;
     color: #286444;
 }
 
 main .first .button1 {
-    font-size: 20px;
+    font-size: 1.2em;
     padding: 5px 20px;
     border-radius: 10px;
     background-color: #bb1613;
@@ -66,7 +60,7 @@ main .first .button1 {
 }
 
 main .first .button2 {
-    font-size: 20px;
+    font-size: 1.2em;
     padding: 5px 55px;
     border-radius: 10px;
     background-color: #286444;
@@ -80,45 +74,45 @@ main .second {
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
+    margin: 0 20%;
 }
 
 main .second .card {
     display: flex;
-    width: 25%;
+    width: 33%;
     flex-direction: column;
-    margin: 20px 40px;
+    margin: auto;
     justify-content: center;
     align-items: center;
+
 }
 
 main .second  p {
-    font-size: 30px;
+    font-size: 1.5em;
     color: #bb1613;
     font-weight: bold;
 }
 
 main .third div {
-    display: grid;
-    grid-template-columns: repeat(3,1fr);
+    display: flex;
+    flex-wrap: wrap;
     justify-content: center;
     align-items: center;
     margin: auto;
 }
 
 main .third .card {
+    width: 30%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    margin: 0px;
-    padding: 0px 60px;
+    margin: auto;
 }
 
 main .third  p {
-    font-size: 20px;
+    font-size: 1.4em;
     color: #286444;
-    margin: 0px;
-    border: 2px solid #0000;
     text-align: justify;
 }
 
@@ -128,31 +122,28 @@ main .Fourth {
     justify-content: center;
     align-items: stretch;
     background-color: #E9E8EB;
-    padding-top: 30px;
 }
 
 main .Fourth .cards {
-    width: 25%; /* 4 cards in one row */
+    width: 25%;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: stretch;
     background-color: #FFFF;
-    padding: 10PX;
-    border-radius: 15PX;
+    padding: 20pX;
+    border-radius: 15px;
 }
 
 main .Fourth div {
-    padding: 0 5%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
-    align-items: center;
+    padding: 0 5%;
 }
 
 main .Fourth button {
-    font-size: 20px;
+    font-size: 1.4em;
     font-family: 'MyCustomFont';
     background-color: #bb1613;
     color: #ffffff;
@@ -167,7 +158,7 @@ main .Fourth div p {
 
 main .Fourth P {
     background-color: #FFFF;
-    font-size: 20px;
+    font-size: 1.4em;
 }
 
 main .fifth {
@@ -185,11 +176,11 @@ main .fifth {
     padding: 0 50;
 }
 .accordion h1 {
-    font-size: 32px;
+    font-size: 2em;
     text-align: center;
 }
 .accordion-item {
-    margin-top: 16px;
+    margin-top: 1em;
     border: 1px solid #fcfcfc;
     border-radius: 6px;
     background: #ffffff;
@@ -200,7 +191,7 @@ main .fifth {
     margin: 0;
     display: flex;
     width: 100%;
-    font-size: 15px;
+    font-size: 0.9em;
     cursor: pointer;
     justify-content: space-between;
     flex-direction: row-reverse;
@@ -210,7 +201,7 @@ main .fifth {
 }
 .accordion-item .accordion-item-desc {
     display: none;
-    font-size: 14px;
+    font-size: 0.9em;
     line-height: 22px;
     font-weight: 300;
     color: #444;
@@ -232,11 +223,11 @@ main .fifth {
     ~ .accordion-item-title
     .icon:after {
     content: "-";
-    font-size: 20px;
+    font-size: 1.1em;
 }
 .accordion-item input[type="checkbox"] ~ .accordion-item-title .icon:after {
     content: "+";
-    font-size: 20px;
+    font-size: 1.1em;;
 }
 .accordion-item:first-child {
     margin-top: 0;
@@ -250,7 +241,7 @@ main .fifth {
         padding: 0 16px;
     }
     .accordion h1 {
-        font-size: 22px;
+        font-size: 1.3em;
     }
 }
 
@@ -266,7 +257,7 @@ footer {
 footer p {
     background-color: #bb1613;
     color: #ffffff;
-    font-size: 20px;
+    font-size: 1.1em;
     padding: 10px 80px;
     border-radius: 0px 0px 30px 30px;
 }
@@ -298,6 +289,9 @@ footer p {
     main .Fourth .cards {
         width: 50%;
     }
+    main .second .card {
+        width: 33%;
+    }
 
     header {
         flex-direction: row;
@@ -305,7 +299,7 @@ footer p {
         text-align: center;
     }
 
-    .main-container {
-        font-size: 1.3em;
+    .main-container p {
+        font-size: 1em;
     }
 }
