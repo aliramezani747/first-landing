@@ -20,30 +20,30 @@ body {
 
 header{
     display: flex;
-    flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
     background-color: #E9E8EB;
-    padding: 50px 60px 0px 60px;
+    padding: 3% 3%;
 }
 
 
 main .first {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    justify-content: space-between;
+    align-items: center;
     background-color: #E9E8EB;
-    border-radius: 0px 0px 115px 115px;
+    padding: 0 5%;
+    border-radius: 0px 0px 50px 50px;
 }
 
 
 main .first .season {
-    /*width: 50%;*/
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 10px;
+    
 }
 
 main .first .register {
@@ -51,10 +51,18 @@ main .first .register {
     flex-direction: row;
     font-weight: bold;
     color: #286444;
+    margin: 0px;
+    padding: 0px;
+}
+
+main .first .btnBox {
+    display: flex;
+    justify-content: center;
+    text-align: center;
 }
 
 main .first .button1 {
-    padding: 5px 20px;
+    padding: 0%;
     border-radius: 10px;
     background-color: #bb1613;
     color: #ffffff;
@@ -62,7 +70,7 @@ main .first .button1 {
 }
 
 main .first .button2 {
-    padding: 5px 55px;
+    padding: 0%;
     border-radius: 10px;
     background-color: #286444;
     color: #ffffff;
@@ -71,19 +79,17 @@ main .first .button2 {
 
 
 main .second {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
     justify-content: center;
     align-items: center;
-    margin: 3% 20%;
+    margin: 3% 15%;
 }
 
 main .second .card {
     display: flex;
-    width: 33%;
     flex-direction: column;
-    margin: auto;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
 
 }
@@ -94,24 +100,24 @@ main .second  p {
 }
 
 main .third div {
-    display: flex;
-    flex-wrap: wrap;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
     justify-content: center;
     align-items: center;
+    margin: 2% 5%;
 }
 
 main .third .card {
-    width: 27%;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
 
-main .third  p {
+/*main .third  p {
     color: #286444;
-    text-align: justify;
-}
+    text-align: justify;*
+}*/
 
 main .Fourth {
     display: flex;
@@ -122,7 +128,7 @@ main .Fourth {
 }
 
 main .Fourth .cards {
-    width: 25%;
+    width: 20%;
     box-sizing: border-box;
     display: flex;
     flex-direction: column;
@@ -136,8 +142,15 @@ main .Fourth .cards {
 main .Fourth div {
     display: flex;
     flex-wrap: wrap;
-    padding: 0 5%;
+    justify-content: center;
+    align-items: center;
+    margin: 1% 1%;
 }
+
+main .Fourth .divFourth {
+    margin: 2% 0;
+}
+
 
 main .Fourth button {
     font-family: 'MyCustomFont';
@@ -152,8 +165,11 @@ main .Fourth div p {
     align-items: center;
 }
 
-main .Fourth P {
+main .Fourth p {
     background-color: #FFFF;
+    border-radius: 10px;
+    text-align: center;
+    padding: 1% 1%;
 }
 
 main .fifth {
@@ -252,57 +268,202 @@ footer {
 footer p {
     background-color: #bb1613;
     color: #ffffff;
-    padding: 10px 80px;
+    padding: 1% 8%;
     border-radius: 0px 0px 30px 30px;
+    text-align: center;
 }
 
 /* media query */
 
 @media screen and (max-width:1600px){
     .main-container {width: 100%;}
+    
+
+    header .image0  {width: 15%;}
+
+
+    main .first .image1 {width: 100%;}
+    main .first .text1 {font-size: 2.3em;}
+
+
+    main .second .image2 {width: 40%;}
+    main .second .text2 {font-size: 1.3em;}
+
+    main .third .image3 {width: 70%;}
+    main .third .image4 {width: 80%;}
+    main .third .text3 {font-size: 1.3em;}
+
+    main .Fourth .image5 {width: 30%;}
+    main .Fourth .text4 {font-size: 1.3em;}
+
+    footer p {font-size: 1.3em;}
+
+
     .main-container .image {}
-    .main-container .text {font-size: 1.5em;}
+    .main-container .text {font-size: 1.2em;}
     .main-container .btn {font-size: 1.5em;}
+
 
 }
 @media screen and (max-width:1200px){
     .main-container {width: 100%;}
-    .main-container .image {width: 75%;}
-    .main-container .text {font-size: 1.4em;}
-    .main-container .btn {font-size: 1.4em;}
+
+
+    header .image0  {width: 15%;}
+
+
+    main .first .image1 {width: 80%;}
+    main .first .text1 {font-size: 1.3em;}
+
+
+    main .second .image2 {width: 50%;}
+    main .second .text2 {font-size: 1.3em;}
+
+    main .third .image3 {width: 70%;}
+    main .third .image4 {width: 80%;}
+    main .third .text3 {font-size: 1.3em;}
+
+
+    main .Fourth .image5 {width: 40%;}
+    main .Fourth .text4 {font-size: 1.3em;}
+
+    footer p {font-size: 1.3em;}
+
+
+    .main-container .image {width: 80%;}
+    .main-container .text {font-size: 1.2em;}
+    .main-container .btn {font-size: 1.2em;}
+
 
 }
 
 @media screen and (max-width:960px){
     .main-container {width: 100%;}
-    .main-container .image {width: 60%;}
-    .main-container .text {font-size: 1.3em;}
-    .main-container .btn {font-size: 1.3em;}
+
+
+    header .image0  {width: 15%;}
+    
+
+    main .first .image1 {width: 80%;}
+    main .first .text1 {font-size: 0.9em;}
+
+
+    main .second .image2 {width: 50%;}
+    main .second .text2 {font-size: 0.9em;}
+
+    main .third .image3 {width: 70%;}
+    main .third .image4 {width: 80%;}
+    main .third .text3 {font-size: 0.9em;}
+
+    main .Fourth .image5 {width: 50%;}
+    main .Fourth .text4 {font-size: 0.9em;}
+
+    footer p {font-size: 0.9em;}
+
+
+
+    .main-container .image {width: 80%;}
+    .main-container .text {font-size: 1.2em;}
+    .main-container .btn {font-size: 1em;}
+
 
 }
 
 @media screen and (max-width:720px){
     .main-container {width: 100%;}
-    .main-container .image {width: 45%}
+
+
+    header .image0 {width: 15%;}
+    
+
+    main .first .image1 {width: 80%;}
+    main .first .text1 {font-size: 0.8em;}
+
+
+    main .second .image2 {width: 50%;}
+    main .second .text2 {font-size: 0.8em;}
+
+    main .third .image3 {width: 70%;}
+    main .third .image4 {width: 80%;}
+    main .third .text3 {font-size: 0.8em;}
+
+    main .Fourth .image5 {width: 50%;}
+    main .Fourth .text4 {font-size: 0.8em;}
+
+    footer p {font-size: 0.8em;}
+
+
+
+    .main-container .image {width: 100%}
     .main-container .text {font-size: 1.2em;}
-    .main-container .btn {font-size: 1.2em;}
+    .main-container .btn {font-size: 0.8em;}
 
 }
 
 @media screen and (max-width:480px){
     .main-container {width: 100%;}
-    .main-container .image {width : 60%;}
-    .main-container .text {font-size: 1.1em;}
-    .main-container .btn {font-size: 1.1em;}
-    main .Fourth .cards {width: 50%;}
+
+
+    header .image0 {width: 15%;}
+    
+
+    main .first .image1 {width: 80%;}
+    main .first .text1 {font-size: 0.5em;}
+
+
+    main .second .image2 {width: 50%;}
+    main .second .text2 {font-size: 0.5em;}
+
+    main .third .image3 {width: 70%;}
+    main .third .image4 {width: 80%;}
+    main .third .text3 {font-size: 0.5em;}
+
+    main .Fourth .image5 {width: 50%;}
+    main .Fourth .text4 {font-size: 0.5em;}
+
+    footer p {font-size: 0.5em;}
+
+
+
+    .main-container .image {width : 100%;}
+    .main-container .text {font-size: 1em;}
+    .main-container .btn {font-size: 0.6em;}
+    main .Fourth .cards {width: 40%;}
+
     
 }
 
 @media screen and (max-width:300px){
     .main-container {width: 100%;}
-    .main-container .image {width : 30%;}
+
+
+    header .image0 {width: 15%;}
+    
+
+    main .first .image1 {width: 80%;}
+    main .first .text1 {font-size: 0.5em;}
+
+
+    main .second .image2 {width: 80%;}
+    main .second .text2 {font-size: 0.5em;}
+
+
+    main .third .image3 {width: 20%;}
+    main .third .image4 {width: 90%;}
+    main .third .text3 {font-size: 0.5em;}
+
+    main .Fourth .image5 {width: 40%;}
+    main .Fourth .text4 {font-size: 0.5em;}
+
+
+    footer p {font-size: 0.5em;}
+
+
+
+    .main-container .image {width : 100%;}
     .main-container .text {font-size: 1em;}
-    .main-container .btn {font-size: 1em;}
-    main .Fourth .cards {width: 50%;}
+    .main-container .btn {font-size: 0.5em;}
+    main .Fourth .cards {width: 40%;}
+
     
 }
