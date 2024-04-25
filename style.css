@@ -191,7 +191,6 @@ main .fifth {
     display: flex;
     flex-direction: column;
     max-width: 991px;
-    min-width: 320px;
     margin: auto;
     padding: 0 50;
 }
@@ -417,7 +416,7 @@ footer p {
     
 
     main .first .image1 {width: 100%;}
-    main .first .text1 {font-size: 0.6em;}
+    main .first .text1 {font-size: 0.5em;}
 
 
     main .second .image2 {width: 50%;}
