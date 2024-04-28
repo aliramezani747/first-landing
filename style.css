@@ -53,7 +53,7 @@ main .first .register {
     color: #286444;
     margin: 0px;
     padding: 0px;
-    font-size: 2.6vw;
+    font-size: 2.1vw;
 }
 
 main .first .btnBox {
@@ -212,7 +212,7 @@ main .fifth {
     margin: 0;
     display: flex;
     width: 100%;
-    font-size: 0.6em;
+    font-size: 0.9em;
     cursor: pointer;
     justify-content: space-between;
     flex-direction: row-reverse;
@@ -265,6 +265,13 @@ main .fifth {
     .accordion h1 {
         font-size: 1em;
     }
+    .accordion-item .accordion-item-title {
+        font-size: 0.6em;
+    }
+    .accordion-item .accordion-item-desc {
+        font-size: 0.6em;
+    }
+
 }
 
 footer {
@@ -285,25 +292,47 @@ footer p {
 
 /* media query */
 
+.main-container {width: 100%;}
+    
+
+    header .image0  {width: 10%;}
+
+
+    main .first .image1 {width: 80%;}
+    main .first .text1
+
+
+    main .second .image2 {width: 30%;}
+    main .second .text2 {font-size: 1.3em;}
+
+    main .third .image3 {width: 15%;}
+    main .third .image4 {width: 65%;}
+    main .third .text3 {font-size: 1.3em;}
+
+    main .Fourth .image5 {width: 20%;}
+    main .Fourth .text4 {font-size: 1.1em;}
+
+    footer p {font-size: 1.3em;}
+
 @media screen and (max-width:1600px){
     .main-container {width: 100%;}
     
 
-    header .image0  {width: 15%;}
+    header .image0  {width: 10%;}
 
 
-    main .first .image1 {width: 100%;}
+    main .first .image1 {width: 80%;}
     main .first .text1
 
 
-    main .second .image2 {width: 40%;}
+    main .second .image2 {width: 30%;}
     main .second .text2 {font-size: 1.3em;}
 
-    main .third .image3 {width: 20%;}
-    main .third .image4 {width: 80%;}
+    main .third .image3 {width: 15%;}
+    main .third .image4 {width: 65%;}
     main .third .text3 {font-size: 1.3em;}
 
-    main .Fourth .image5 {width: 30%;}
+    main .Fourth .image5 {width: 20%;}
     main .Fourth .text4 {font-size: 1.1em;}
 
     footer p {font-size: 1.3em;}
@@ -311,28 +340,26 @@ footer p {
 
     .main-container .text {font-size: 1.2em;}
     .main-container .btn {font-size: 1.5em;}
-
-
 }
 @media screen and (max-width:1200px){
     .main-container {width: 100%;}
 
 
-    header .image0  {width: 15%;}
+    header .image0  {width: 10%;}
 
 
-    main .first .image1 {width: 100%;}
+    main .first .image1 {width: 80%;}
 
 
-    main .second .image2 {width: 50%;}
+    main .second .image2 {width: 30%;}
     main .second .text2 {font-size: 1.3em;}
 
-    main .third .image3 {width: 20%;}
-    main .third .image4 {width: 80%;}
+    main .third .image3 {width: 15%;}
+    main .third .image4 {width: 65%;}
     main .third .text3 {font-size: 1.1em;}
 
 
-    main .Fourth .image5 {width: 40%;}
+    main .Fourth .image5 {width: 20%;}
     main .Fourth .text4 {font-size: 1.3em;}
 
     footer p {font-size: 1.3em;}
@@ -341,28 +368,26 @@ footer p {
     .main-container .image {width: 80%;}
     .main-container .text {font-size: 1.2em;}
     .main-container .btn {font-size: 1.2em;}
-
-
 }
 
 @media screen and (max-width:960px){
     .main-container {width: 100%;}
 
 
-    header .image0  {width: 15%;}
+    header .image0  {width: 10%;}
     
 
-    main .first .image1 {width: 100%;}
+    main .first .image1 {width: 80%;}
 
 
-    main .second .image2 {width: 50%;}
+    main .second .image2 {width: 30%;}
     main .second .text2 {font-size: 0.9em;}
 
-    main .third .image3 {width: 20%;}
-    main .third .image4 {width: 80%;}
+    main .third .image3 {width: 15%;}
+    main .third .image4 {width: 65%;}
     main .third .text3 {font-size: 0.7em;}
 
-    main .Fourth .image5 {width: 50%;}
+    main .Fourth .image5 {width: 20%;}
     main .Fourth .text4 {font-size: 0.9em;}
 
     footer p {font-size: 0.9em;}
@@ -372,28 +397,26 @@ footer p {
     .main-container .image {width: 80%;}
     .main-container .text {font-size: 1.2em;}
     .main-container .btn {font-size: 1em;}
-
-
 }
 
 @media screen and (max-width:720px){
     .main-container {width: 100%;}
 
 
-    header .image0 {width: 15%;}
+    header .image0 {width: 10%;}
     
 
-    main .first .image1 {width: 100%;}
+    main .first .image1 {width: 80%;}
 
 
-    main .second .image2 {width: 50%;}
+    main .second .image2 {width: 30%;}
     main .second .text2 {font-size: 0.8em;}
 
-    main .third .image3 {width: 20%;}
-    main .third .image4 {width: 80%;}
+    main .third .image3 {width: 15%;}
+    main .third .image4 {width: 65%;}
     main .third .text3 {font-size: 0.7em;}
 
-    main .Fourth .image5 {width: 50%;}
+    main .Fourth .image5 {width: 20%;}
     main .Fourth .text4 {font-size: 0.8em;}
 
     footer p {font-size: 0.7em;}
@@ -403,27 +426,26 @@ footer p {
     .main-container .image {width: 100%}
     .main-container .text {font-size: 1.2em;}
     .main-container .btn {font-size: 0.8em;}
-
 }
 
 @media screen and (max-width:480px){
     .main-container {width: 100%;}
 
 
-    header .image0 {width: 15%;}
+    header .image0 {width: 10%;}
     
 
-    main .first .image1 {width: 100%;}
+    main .first .image1 {width: 80%;}
 
 
-    main .second .image2 {width: 50%;}
+    main .second .image2 {width: 30%;}
     main .second .text2 {font-size: 0.5em;}
 
-    main .third .image3 {width: 20%;}
-    main .third .image4 {width: 80%;}
+    main .third .image3 {width: 15%;}
+    main .third .image4 {width: 65%;}
     main .third .text3 {font-size: 0.5em;}
 
-    main .Fourth .image5 {width: 50%;}
+    main .Fourth .image5 {width: 35%;}
     main .Fourth .text4 {font-size: 0.7em;}
 
     footer p {font-size: 0.7em;}
@@ -434,26 +456,24 @@ footer p {
     .main-container .text {font-size: 0.8em;}
     .main-container .btn {font-size: 0.7em;}
     main .Fourth .cards {width: 40%;}
-
-    
 }
 
 @media screen and (max-width:300px){
     .main-container {width: 100%;}
 
 
-    header .image0 {width: 15%;}
+    header .image0 {width: 10%;}
     
 
-    main .first .image1 {width: 100%;}
+    main .first .image1 {width: 80%;}
 
 
     main .second .image2 {width: 80%;}
     main .second .text2 {font-size: 0.5em;}
 
 
-    main .third .image3 {width: 20%;}
-    main .third .image4 {width: 90%;}
+    main .third .image3 {width: 15%;}
+    main .third .image4 {width: 65%;}
     main .third .text3 {font-size: 0.5em;}
 
     main .Fourth .image5 {width: 40%;}
@@ -468,6 +488,5 @@ footer p {
     .main-container .text {font-size: 1em;}
     .main-container .btn {font-size: 0.5em;}
     main .Fourth .cards {width: 40%;}
-
     
 }
