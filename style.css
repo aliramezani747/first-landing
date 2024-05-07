@@ -339,7 +339,7 @@ footer p {
 
 /* media query */
 
-.main-container {width: 100%;}
+    .main-container {width: 100%;}
     
 
     header .image0  {width: 10%;}
@@ -489,13 +489,11 @@ footer p {
     main .second .text2 {font-size: 0.5em;}
 
     main .third .image3 {width: 15%;}
-    main .third .image4 {width: 65%;}
+    main .third .image4 {width: 90%;}
     main .third .text3 {font-size: 0.5em;}
 
     main .Fourth .image5 {width: 35%;}
     main .Fourth .text4 {font-size: 0.7em;}
-
-    main .fifth1 .form label {margin-right: 10px;}
 
     footer p {font-size: 0.7em;}
 
@@ -522,13 +520,12 @@ footer p {
 
 
     main .third .image3 {width: 15%;}
-    main .third .image4 {width: 65%;}
+    main .third .image4 {width: 80%;}
     main .third .text3 {font-size: 0.5em;}
 
     main .Fourth .image5 {width: 40%;}
     main .Fourth .text4 {font-size: 0.9em;}
     
-    main .fifth1 .form label {margin-right: 10px;}
 
     footer p {font-size: 0.5em;}
 
