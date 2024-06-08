@@ -81,28 +81,28 @@
                             <P class="text4"> معادل ۶۰۰ گیگ داخلی </P>
                             <P class="text4"> ۳ ماهه  </P>
                             <P class="text4"> ۹۰ هزار تومان </P>
-                            <button class="btn" id="buy300"> خرید سرویس </button>
+                            <button class="btn"> خرید سرویس </button>
                         </div>
                         <div class="cards">
                             <P class="text4"> ۳۰۰۰ گیگ بین الملل </P>
                             <P class="text4"> معادل ۶۰۰۰ گیگ داخلی </P>
                             <P class="text4"> ۶ ماهه  </P>
                             <P class="text4"> ۳۰۰ هزار تومان </P>
-                            <button class="btn" id="buy3000"> خرید سرویس </button>
+                            <button class="btn"> خرید سرویس </button>
                         </div>
                         <div class="cards">
                             <P class="text4"> ۱۰۰۰ گیگ بین الملل </P>
                             <P class="text4"> معادل ۲۰۰۰ گیگ داخلی </P>
                             <P class="text4"> ۱۲ ماهه  </P>
                             <P class="text4"> ۶۰۰ هزار تومان </P>
-                            <button class="btn" id="buy1000"> خرید سرویس </button>
+                            <button class="btn"> خرید سرویس </button>
                         </div>
                         <div class="cards">
                             <P class="text4"> ۹۰۰۰ گیگ بین الملل </P>
                             <P class="text4"> معادل ۱۸۰۰۰ گیگ داخلی </P>
                             <P class="text4"> ۱۲ ماهه  </P>
                             <P class="text4"> ۱میلیون و ۵۰۰ هزار تومان </P>
-                            <button class="btn" id="buy9000"> خرید سرویس </button>
+                            <button class="btn"> خرید سرویس </button>
                         </div>
                     </div>
             </section>
@@ -111,26 +111,31 @@
                 <div class="form">
                     <div>
                         <label for="fname">نام</label><br>
-                        <input type="text"><br>
-                    </div>
-                    <div>
-                        <label for="fname"> تلفن همراه </label><br>
-                        <input type="text"><br>
+                        <input placeholder="فارسی تاریپ کنید" type="text"><br>
                     </div>
                     <div>
                         <label for="fname"> نام خانوادگی </label><br>
-                        <input type="text"><br>
+                        <input placeholder="فارسی تاریپ کنید"  type="text"><br>
                     </div>
                     <div>
-                        <label for="fname"> استان </label><br>
-                        <input type="text"><br>
+                        <label for="fname"> شماره تلفن ثابت </label><br>
+                        <div class="form1">
+                            <input placeholder="شماره تلفن" type="text">
+                            <input placeholder="کد شهر " class="in1" type="text">
+                        </div>
+                    </div>
+                    <div>
+                        <label for="fname"> تلفن همراه </label><br>
+                        <input placeholder=" نمونه :۰۹۱۲۱۰۰۲۰۰۳ " type="text"><br>
                     </div>
                 </div>
-                <div>
-                    <button class="button4 btn" id="successAlert"> ثبت اطلاعات و ادامه  </button>
+                <div class="policy">
+                    <a href="https://store.pishgaman.net/download/%D9%82%D8%B1%D8%A7%D8%B1%D8%AF%D8%A7%D8%AFADSL.pdf"> 
+                        کلیه قوانین مندرج در این لینک را مطالعه و تایید می نمایم </a>
+                        <input type="checkbox" id="myCheckbox" onclick="showButton()">
                 </div>
-                <div id="alertMessage" class="alert-success">
-        
+                <div id="myButton" style="display:none;">
+                    <button class="button4 btn"> ثبت اطلاعات و ادامه  </button>
                 </div>
             </section>
             <section class="fifth">

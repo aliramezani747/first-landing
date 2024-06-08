@@ -207,7 +207,18 @@ main .fifth1 .form {
     text-align: right;
 }
 
+main .fifth1 .form1 {
+    display: flex;
+    justify-content: right;
+    text-align: right;
+    width: 72%;
+}
+main .fifth1 .form1 .in1{
+    width: 35%;
+}
+
 main  .fifth1 .form input {
+    font-family: inherit;
     border-radius: 30px;
     border: 1px solid #000;
     width: 65%;
@@ -231,6 +242,17 @@ main .fifth1 .button4 {
     padding: 8px 15px;
     margin: 1% 0%;
 }
+
+main .fifth1 a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+main .fifth1 .policy {
+    margin-top: 2%;
+}
+
+
 
 main .fifth1 .alert {
     padding: 15px;
