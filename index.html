@@ -37,7 +37,7 @@
                     <p class="text2">کیفیت بالا</p>
                 </div>
                 <div class="card">
-                    <img class="image2" src="./img/Vector Smart Object.webp" alt="را اندازی">
+                    <img class="image2" src="./img/Vector Smart Object.webp" alt="راه اندازی">
                     <p class="text2">نصب سریع</p>
                 </div>
             </section>
@@ -81,32 +81,40 @@
                             <P class="text4"> معادل ۶۰۰ گیگ داخلی </P>
                             <P class="text4"> ۳ ماهه  </P>
                             <P class="text4"> ۹۰ هزار تومان </P>
-                            <button class="btn" id="button300"> خرید سرویس </button>
+                            <h2 style="display: none;">محصول 1</h2>
+                            <p class="description" style="display: none;"> ۳۰۰ گیگ بین الملل معادل ۶۰۰ گیگ داخلی ۳ ماهه </p>
+                            <button class="btn" id="button300" onclick="showDescription('محصول 1')"> خرید سرویس </button>
                         </div>
-                        <div class="cards">
+                        <div class="cards" id="card2">
                             <P class="text4"> ۳۰۰۰ گیگ بین الملل </P>
                             <P class="text4"> معادل ۶۰۰۰ گیگ داخلی </P>
                             <P class="text4"> ۶ ماهه  </P>
                             <P class="text4"> ۳۰۰ هزار تومان </P>
-                            <button class="btn" id="button3000"> خرید سرویس </button>
+                            <h2 style="display: none;">محصول 2</h2>
+                            <p class="description" style="display: none;"> ۳۰۰۰ گیگ بین الملل معادل ۶۰۰۰ گیگ داخلی ۶ ماهه  </p>
+                            <button class="btn" id="button3000" onclick="showDescription('محصول 2')"> خرید سرویس </button>
                         </div>
-                        <div class="cards">
+                        <div class="cards" id="card3">
                             <P class="text4"> ۱۰۰۰ گیگ بین الملل </P>
                             <P class="text4"> معادل ۲۰۰۰ گیگ داخلی </P>
                             <P class="text4"> ۱۲ ماهه  </P>
                             <P class="text4"> ۶۰۰ هزار تومان </P>
-                            <button class="btn" id="button1000"> خرید سرویس </button>
+                            <h2 style="display: none;">محصول 3</h2>
+                            <p class="description" style="display: none;"> ۱۰۰۰ گیگ بین الملل معادل ۲۰۰۰ گیگ داخلی ۱۲ ماهه  </p>
+                            <button class="btn" id="button1000" onclick="showDescription('محصول 3')"> خرید سرویس </button>
                         </div>
-                        <div class="cards">
+                        <div class="cards" id="card4">
                             <P class="text4"> ۹۰۰۰ گیگ بین الملل </P>
                             <P class="text4"> معادل ۱۸۰۰۰ گیگ داخلی </P>
                             <P class="text4"> ۱۲ ماهه  </P>
                             <P class="text4"> ۱میلیون و ۵۰۰ هزار تومان </P>
-                            <button class="btn" id="button9000"> خرید سرویس </button>
+                            <h2 style="display: none;">محصول 4</h2>
+                            <p class="description" style="display: none;"> ۹۰۰۰ گیگ بین الملل معادل ۱۸۰۰۰ گیگ داخلی ۱۲ ماهه  </p>
+                            <button class="btn" id="button9000" onclick="showDescription('محصول 4')"> خرید سرویس </button>
                         </div>
                     </div>
             </section>
-            <section class="fifth1" id="targetSection">
+            <section class="fifth1" id="targetSection targetSection1">
                 <p class="text">برای خرید سرویس فرم زیر را پر کنید</p>
                 <div class="form">
                     <div>
@@ -129,13 +137,14 @@
                         <input placeholder=" نمونه :۰۹۱۲۱۰۰۲۰۰۳ " type="text"><br>
                     </div>
                 </div>
+                <div class="alert alert-success" id="descriptionDisplay" style="display: none;"></div>
                 <div class="policy">
                     <a href="https://store.pishgaman.net/download/%D9%82%D8%B1%D8%A7%D8%B1%D8%AF%D8%A7%D8%AFADSL.pdf"> 
                         کلیه قوانین مندرج در این لینک را مطالعه و تایید می نمایم </a>
                         <input type="checkbox" id="myCheckbox" onclick="showButton()">
                 </div>
-                <div>
-                    <button class="button4 btn" id="myButton" style="display:none;" > ثبت اطلاعات و ادامه  </button>
+                <div id="myButton" style="display:none;">
+                    <button class="button4 btn"  > ثبت اطلاعات و ادامه  </button>
                 </div>
             </section>
             <section class="fifth">
@@ -165,6 +174,6 @@
             <p class="text"> دارای مجوز UNSP به شماره ۱۰۰-۱۳۰-۱۵ در تاریخ  ۱۴۰۲/۰۵/۰۹ از سازمان تنظیم مقررات و ارتباطات رادیویی</p>
         </footer>
     </div>
-    <script type="module" src="./index.js"></script>
+    <script type="" src="./index.js"></script>
 </body>
 </html>

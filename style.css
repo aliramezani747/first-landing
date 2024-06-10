@@ -184,6 +184,7 @@ main .Fourth p {
     padding: 1% 1%;
 }
 
+
 main .fifth1 {
     background-color: #ffffff ;
     text-align: center;
@@ -242,6 +243,17 @@ main .fifth1 .button4 {
     padding: 8px 15px;
     margin: 1% 0%;
 }
+main .fifth1 .test {
+    padding: 0%;
+    border-radius: 30px;
+    background-color: #286444;
+    color: #ffffff;
+    font-family: 'MyCustomFont';
+    padding: 2px 18px;
+    border: 0px;
+    padding: 8px 15px;
+    margin: 1% 0%;
+}
 
 main .fifth1 a {
     text-decoration: none;
@@ -253,7 +265,6 @@ main .fifth1 .policy {
 }
 
 
-
 main .fifth1 .alert {
     padding: 15px;
     margin-bottom: 20px;
@@ -262,11 +273,13 @@ main .fifth1 .alert {
 }
 
 main .fifth1 .alert-success {
-    color: #3c763d;
-    background-color: #dff0d8;
+    color: #000000;
+    font-weight: 600;
+    background-color: #D1ECF1;
     border-color: #d6e9c6;
-    margin: 0% 3%;
+    margin: 1% 3%;
     border-radius: 15px;
+    text-align: center;
 }
 
 .alert-danger {
