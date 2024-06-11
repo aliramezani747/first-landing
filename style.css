@@ -258,6 +258,7 @@ main .fifth1 .test {
 main .fifth1 a {
     text-decoration: none;
     color: #007bff;
+    font-size: .9em;
 }
 
 main .fifth1 .policy {
@@ -274,10 +275,11 @@ main .fifth1 .alert {
 
 main .fifth1 .alert-success {
     color: #000000;
+    font-size: 0.9em;
     font-weight: 600;
     background-color: #D1ECF1;
     border-color: #d6e9c6;
-    margin: 1% 3%;
+    margin: 1% 13%;
     border-radius: 15px;
     text-align: center;
 }
@@ -523,7 +525,7 @@ footer p {
 
     main .Fourth .image5 {width: 20%;}
     main .Fourth .text4 {font-size: 0.9em;}
-
+    
     footer p {font-size: 0.9em;}
 
 
@@ -553,6 +555,8 @@ footer p {
     main .Fourth .image5 {width: 20%;}
     main .Fourth .text4 {font-size: 0.8em;}
 
+    main .fifth1 .form input {font-size: 0.4em;}
+    main .fifth1 .alert-success { margin: 1% 1%;}
     footer p {font-size: 0.7em;}
 
 
@@ -582,6 +586,8 @@ footer p {
     main .Fourth .image5 {width: 35%;}
     main .Fourth .text4 {font-size: 0.7em;}
 
+    main .fifth1 .form input {font-size: 0.4em;}
+    main .fifth1 .alert-success { margin: 1% 1%;}
     footer p {font-size: 0.7em;}
 
 
@@ -612,8 +618,9 @@ footer p {
 
     main .Fourth .image5 {width: 40%;}
     main .Fourth .text4 {font-size: 0.9em;}
-    
 
+    main .fifth1 .form input {font-size: 0.4em;}
+    main .fifth1 .alert-success { margin: 1% 1%;}
     footer p {font-size: 0.5em;}
 
 

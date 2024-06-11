@@ -1,6 +1,5 @@
-
-const buttonScroll = document.getElementById("buttonScroll");
-const sectionTarget = document.getElementById("sectionTarget");
+const scrollButton = document.getElementById("scrollBtn");
+const targetSection = document.getElementById("targetSec");
 
 scrollButton.addEventListener("click", () => {
   const targetPosition = targetSection.offsetTop;
@@ -10,10 +9,10 @@ scrollButton.addEventListener("click", () => {
   });
 });
 
-const buttonScroll1 = document.getElementById("buttonScroll1");
-const sectionTarget1 = document.getElementById("sectionTarget");
+const scrollButtonn = document.getElementById("scrollBtn1");
+const targetSectionn = document.getElementById("targetSec1");
 
-scrollButton.addEventListener("click", () => {
+scrollButtonn.addEventListener("click", () => {
   const targetPosition = targetSection.offsetTop;
   window.scrollTo({
     top: targetPosition,
