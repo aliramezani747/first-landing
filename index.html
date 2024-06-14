@@ -81,27 +81,27 @@
                             <P class="text4"> معادل ۶۰۰ گیگ داخلی </P>
                             <P class="text4"> ۳ ماهه  </P>
                             <P class="text4"> ۹۰ هزار تومان </P>
-                            <h2 style="display: none;">محصول 1</h2>
+                            <h2 style="display: none;">25181</h2>
                             <p class="description" style="display: none;"> ۳۰۰ گیگ بین الملل معادل ۶۰۰ گیگ داخلی ۳ ماهه </p>
-                            <button class="btn" id="button300" onclick="showDescription('محصول 1')"> خرید سرویس </button>
+                            <button class="btn" sid="25181" id="button300" onclick="showDescription('25181')"> خرید سرویس </button>
                         </div>
                         <div class="cards" id="card2">
                             <P class="text4"> ۳۰۰۰ گیگ بین الملل </P>
                             <P class="text4"> معادل ۶۰۰۰ گیگ داخلی </P>
                             <P class="text4"> ۶ ماهه  </P>
                             <P class="text4"> ۳۰۰ هزار تومان </P>
-                            <h2 style="display: none;">محصول 2</h2>
+                            <h2 style="display: none;">25184</h2>
                             <p class="description" style="display: none;"> ۳۰۰۰ گیگ بین الملل معادل ۶۰۰۰ گیگ داخلی ۶ ماهه  </p>
-                            <button class="btn" id="button3000" onclick="showDescription('محصول 2')"> خرید سرویس </button>
+                            <button class="btn" sid="25184" id="button3000" onclick="showDescription('25184')"> خرید سرویس </button>
                         </div>
                         <div class="cards" id="card4">
                             <P class="text4"> ۹۰۰۰ گیگ بین الملل </P>
                             <P class="text4"> معادل ۱۸۰۰۰ گیگ داخلی </P>
                             <P class="text4"> ۱۲ ماهه  </P>
                             <P class="text4"> ۱میلیون و ۵۰۰ هزار تومان </P>
-                            <h2 style="display: none;">محصول 4</h2>
+                            <h2 style="display: none;">25187</h2>
                             <p class="description" style="display: none;"> ۹۰۰۰ گیگ بین الملل معادل ۱۸۰۰۰ گیگ داخلی ۱۲ ماهه  </p>
-                            <button class="btn" id="button9000" onclick="showDescription('محصول 4')"> خرید سرویس </button>
+                            <button class="btn" sid="25187" id="button9000" onclick="showDescription('25187')"> خرید سرویس </button>
                         </div>
                     </div>
             </section>
@@ -110,17 +110,17 @@
                 <div class="form">
                     <div>
                         <label for="fname">نام</label><br>
-                        <input placeholder="فارسی تاریپ کنید" type="text"><br>
+                        <input placeholder="فارسی تاریپ کنید" value="" name="tbFirstName" type="text" maxlength="50" id="tbFirstName"><br>
                     </div>
                     <div>
                         <label for="fname"> نام خانوادگی </label><br>
-                        <input placeholder="فارسی تاریپ کنید"  type="text"><br>
+                        <input placeholder="فارسی تاریپ کنید"  value="" name="tbLastName" type="text" maxlength="50" required id="tbLastName"><br>
                     </div>
                     <div>
                         <label for="fname"> شماره تلفن ثابت </label><br>
                         <div class="form1">
-                            <input placeholder="شماره تلفن" type="text">
-                            <input placeholder="کد شهر " class="in1" type="text">
+                            <input placeholder="شماره تلفن" name="tbAreaCode" type="number" oninput="this.value=this.value.slice(0,this.maxLength)" maxlength="3" id="tbAreaCode" value="" onblur=" padLeft('tbAreaCode', 3); toEnglishNumber('tbAreaCode');">
+                            <input placeholder="کد شهر " name="tbTelRange" type="number" oninput="this.value=this.value.slice(0,this.maxLength)" maxlength="8" id="tbTelRange"  value="" onblur=" toEnglishNumber('tbTelRange');">
                         </div>
                     </div>
                     <div>
@@ -129,13 +129,13 @@
                     </div>
                 </div>
                 <div class="alert alert-success" id="descriptionDisplay" style="display: none;"></div>
-                <div class="policy" id="test12222">
+                <div class="policy">
                     <a href="https://store.pishgaman.net/download/%D9%82%D8%B1%D8%A7%D8%B1%D8%AF%D8%A7%D8%AFADSL.pdf"> 
                         کلیه قوانین مندرج در این لینک را مطالعه و تایید می نمایم </a>
                         <input type="checkbox" id="myCheckbox" onclick="showButton()">
                 </div>
                 <div id="myButton" style="display:none;">
-                    <button class="button4 btn"  > ثبت اطلاعات و ادامه  </button>
+                    <button class="button4 btn" name="submit_button" type="button" id="submit_button"> ثبت اطلاعات و ادامه  </button>
                 </div>
             </section>
             <section class="fifth">

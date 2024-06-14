@@ -31,11 +31,10 @@ function showButton() {
     button.style.display = "none";
   }
 }
-
 function showDescription(product) {
-  let cards = document.getElementsByClassName("cards");
-  for (var i = 0; i < cards.length; i++) {
-    let card = cards[i];
+  let cardss = document.getElementsByClassName("cards");
+  for (let i = 0; i < cardss.length; i++) {
+    let card = cardss[i];
     let title = card.getElementsByTagName("h2")[0].textContent;
     let description = card.getElementsByClassName("description")[0].textContent;
     if (title === product) {
@@ -44,3 +43,39 @@ function showDescription(product) {
     }
   }
 }
+
+
+const submitButton=document.getElementById("submit_button")
+
+submitButton.addEventListener("click", async() => {
+  const ali=document.getElementById('tbFirstName').value
+  const url = "https://store.pishgaman.net/Order/SubmitOrder";
+const data = {
+    selectedServiceId: ali,
+    tbFirstName: "",
+    tbLastName: "",
+    tbTelRange: "",
+    tbMobile: ""
+};
+
+await fetch(url, {
+    method: 'POST', 
+    // mode:"cors",
+    headers: {
+        'Content-Type': 'application/json',
+    },
+    body: JSON.stringify(data) 
+})
+.then(response => {
+    if (!response.ok) {
+        throw new Error('Network response was not ok ' + response.statusText);
+    }
+    return response.json(); 
+})
+.then(data => {
+    console.log('Success:', data); 
+})
+.catch((error) => {
+    console.error('Error:', error);
+});
+});
