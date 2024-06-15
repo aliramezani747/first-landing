@@ -48,14 +48,19 @@ function showDescription(product) {
 const submitButton=document.getElementById("submit_button")
 
 submitButton.addEventListener("click", async() => {
-  const ali=document.getElementById('tbFirstName').value
+  const service = document.getElementById('selectedServiceId').value
+  const firstName = document.getElementById('tbFirstName').value
+  const LastName = document.getElementById('tbLastName').value
+  const telRange = document.getElementById('tbTelRange').value
+  const mobile = document.getElementById('tbMobile').value
+
   const url = "https://store.pishgaman.net/Order/SubmitOrder";
-const data = {
-    selectedServiceId: ali,
-    tbFirstName: "",
-    tbLastName: "",
-    tbTelRange: "",
-    tbMobile: ""
+  const data = {
+    selectedServiceId: service,
+    tbFirstName: firstName,
+    tbLastName: LastName,
+    tbTelRange: telRange,
+    tbMobile: mobile,
 };
 
 await fetch(url, {
