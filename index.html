@@ -119,8 +119,8 @@
                     <div>
                         <label for="fname"> شماره تلفن ثابت </label><br>
                         <div class="form1">
-                            <input placeholder="شماره تلفن" name="tbAreaCode" type="number" oninput="this.value=this.value.slice(0,this.maxLength)" maxlength="3" id="tbAreaCode" value="" onblur=" padLeft('tbAreaCode', 3); toEnglishNumber('tbAreaCode');">
-                            <input placeholder="کد شهر " name="tbTelRange" type="number" oninput="this.value=this.value.slice(0,this.maxLength)" maxlength="8" id="tbTelRange"  value="" onblur=" toEnglishNumber('tbTelRange');">
+                            <input placeholder="شماره تلفن" name="tbAreaCode" type="number" oninput="this.value=this.value.slice(0,this.maxLength)" maxlength="8" id="tbAreaCode" value="" onblur=" padLeft('tbAreaCode', 3); toEnglishNumber('tbAreaCode');">
+                            <input placeholder="کد شهر " name="tbTelRange" type="number" oninput="this.value=this.value.slice(0,this.maxLength)" maxlength="3" id="tbTelRange"  value="" onblur=" toEnglishNumber('tbTelRange');">
                         </div>
                     </div>
                     <div>
@@ -128,7 +128,7 @@
                         <input name="tbMobile" type="number" oninput="this.value=this.value.slice(0,this.maxLength)" pattern="(0)?9\d{9}" maxlength="11" id="tbMobile" class="left form-control controlContent" placeholder="09121002003:نمونه" value="" onblur=" padLeft('tbMobile', 11); toEnglishNumber('tbMobile');"><br>
                     </div>
                 </div>
-                <div class="alert alert-success" id="descriptionDisplay" style="display: none;"></div>
+                <div class="alert alert-success" id="selectedServiceId" style="display: none;"></div>
                 <div class="policy">
                     <a href="https://store.pishgaman.net/download/%D9%82%D8%B1%D8%A7%D8%B1%D8%AF%D8%A7%D8%AFADSL.pdf"> 
                         کلیه قوانین مندرج در این لینک را مطالعه و تایید می نمایم </a>

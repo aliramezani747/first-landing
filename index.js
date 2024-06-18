@@ -38,8 +38,8 @@ function showDescription(product) {
     let title = card.getElementsByTagName("h2")[0].textContent;
     let description = card.getElementsByClassName("description")[0].textContent;
     if (title === product) {
-      document.getElementById("descriptionDisplay").textContent = description;
-      document.getElementById("descriptionDisplay").style.display = "block";
+      document.getElementById("selectedServiceId").textContent = description;
+      document.getElementById("selectedServiceId").style.display = "block";
     }
   }
 }
@@ -52,15 +52,18 @@ submitButton.addEventListener("click", async() => {
   const firstName = document.getElementById('tbFirstName').value
   const LastName = document.getElementById('tbLastName').value
   const telRange = document.getElementById('tbTelRange').value
+  const AreaCode = document.getElementById('tbAreaCode').value
   const mobile = document.getElementById('tbMobile').value
 
   const url = "https://store.pishgaman.net/Order/SubmitOrder";
   const data = {
     selectedServiceId: service,
-    tbFirstName: firstName,
-    tbLastName: LastName,
-    tbTelRange: telRange,
-    tbMobile: mobile,
+    tbFirstName : firstName,
+    tbLastName : LastName,
+    tbTelRange : telRange,
+    tbAreaCode : AreaCode,
+    tbMobile : mobile,
+
 };
 
 await fetch(url, {
