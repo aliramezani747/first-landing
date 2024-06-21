@@ -31,6 +31,7 @@ function showButton() {
     button.style.display = "none";
   }
 }
+let service=""
 function showDescription(product) {
   let cardss = document.getElementsByClassName("cards");
   for (let i = 0; i < cardss.length; i++) {
@@ -38,8 +39,10 @@ function showDescription(product) {
     let title = card.getElementsByTagName("h2")[0].textContent;
     let description = card.getElementsByClassName("description")[0].textContent;
     if (title === product) {
+      console.log("inline");
       document.getElementById("selectedServiceId").textContent = description;
       document.getElementById("selectedServiceId").style.display = "block";
+     service = product
     }
   }
 }
@@ -48,7 +51,6 @@ function showDescription(product) {
 const submitButton=document.getElementById("submit_button")
 
 submitButton.addEventListener("click", async() => {
-  const service = document.getElementById('selectedServiceId').value
   const firstName = document.getElementById('tbFirstName').value
   const LastName = document.getElementById('tbLastName').value
   const telRange = document.getElementById('tbTelRange').value
