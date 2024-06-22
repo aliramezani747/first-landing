@@ -89,3 +89,39 @@ await fetch(url, {
     console.error('Error:', error);
 });
 });
+
+
+function validateFormAndItems() {
+  let tbFirstName = document.getElementById('tbFirstName').value.trim();
+  let tbLastName = document.getElementById('tbLastName').value.trim();
+  let tbAreaCode = document.getElementById('tbAreaCode').value.trim();
+  let tbTelRange = document.getElementById('tbTelRange').value.trim();
+  let tbMobile = document.getElementById('tbMobile').value.trim();
+  
+  if (tbFirstName === '' || tbLastName === '' || tbAreaCode === '' || tbTelRange === '' || tbMobile === '') {
+    alert('لطفا تمام فیلدهای فرم را پر کنید');
+    return false;
+  }
+
+  let selectedServiceDiv = document.getElementById('selectedServiceId');
+
+  if (selectedServiceDiv.style.display === 'none') {
+    let selectedItems = document.querySelectorAll('.selected-item');
+    
+    if (selectedItems.length === 0) {
+      alert('لطفا سرویس مورد نظر خود را انتخاب نمایید.');
+      return false;
+    }
+  } else {
+    const success = 
+    document.getElementById("submit_button").addEventListener("click", () => {
+    let alertElement = document.getElementById("alertMessage");
+
+    alertElement.innerHTML = "همکاران ما به زودی با شما تماس میگیرند";
+    alertElement.style.display = "block";
+});
+console.log(success)
+  }
+
+  return true;
+}

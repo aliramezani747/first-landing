@@ -130,12 +130,16 @@
                 </div>
                 <div class="alert alert-success" id="selectedServiceId" value="" style="display: none;"></div>
                 <div class="policy">
-                    <a href="https://store.pishgaman.net/download/%D9%82%D8%B1%D8%A7%D8%B1%D8%AF%D8%A7%D8%AFADSL.pdf"> 
-                        کلیه قوانین مندرج در این لینک را مطالعه و تایید می نمایم </a>
+                    <span>
+                        کلیه قوانین مندرج در این <a href="https://store.pishgaman.net/download/%D9%82%D8%B1%D8%A7%D8%B1%D8%AF%D8%A7%D8%AFADSL.pdf" >لینک</a> را مطالعه و تایید می نمایم
+                    </span>
                         <input type="checkbox" id="myCheckbox" onclick="showButton()">
                 </div>
                 <div id="myButton" style="display:none;">
-                    <button class="button4 btn" name="submit_button" type="button" id="submit_button"> ثبت اطلاعات و ادامه  </button>
+                    <button class="button4 btn" name="submit_button" type="button" id="submit_button" onclick="validateFormAndItems('')"> ثبت اطلاعات و ادامه  </button>
+                </div>
+                <div id="alertMessage" class="alert-success2" style="display: none;" >
+        
                 </div>
             </section>
             <section class="fifth">

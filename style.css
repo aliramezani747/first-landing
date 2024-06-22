@@ -279,7 +279,20 @@ main .fifth1 .alert-success {
     font-weight: 600;
     background-color: #D1ECF1;
     border-color: #d6e9c6;
-    margin: 1% 13%;
+    margin: 1% 16%;
+    border-radius: 15px;
+    text-align: center;
+}
+
+main .fifth1 .alert-success2 {
+    color: #000000;
+    font-size: 1em;
+    font-weight: 600;
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    margin: 1% 16%;
+    padding: 1%;
     border-radius: 15px;
     text-align: center;
 }
